@@ -1,0 +1,15 @@
+{
+  "name": "skema/skematest",
+  "description": "Unit tests for skema/skema",
+  "license": "MIT",
+  "homepage": "http://visop-dev.com",
+  "require": {
+    "bafs/testify": "dev-master",
+    "skema/skema": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "SkemaTest\\": "./"
+    }
+  }
+}
