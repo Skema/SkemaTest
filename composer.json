@@ -5,7 +5,8 @@
   "homepage": "http://visop-dev.com",
   "require": {
     "bafs/testify": "dev-master",
-    "skema/skema": "dev-master"
+    "skema/skema": "dev-master",
+    "gabordemooij/redbean": "dev-master"
   },
   "autoload": {
     "psr-0": {

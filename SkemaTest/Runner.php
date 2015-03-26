@@ -21,18 +21,18 @@ class Runner
 				case '..':
 				case 'Runner.php':
 				case 'BaseTest.php':
-					continue;
+					continue 2;
 			}
 
 			$testFiles = scandir($thisDir . '/' . $testNamespaceFolder);
 			foreach($testFiles as $testFile) {
-				switch ($testNamespaceFolder) {
-					case '.':
-					case '..':
-						continue;
+				switch ($testFile) {
+					case ".":
+					case "..":
+						continue 2;
 				}
 
-				$className = $testNamespaceFolder . '\\' . substr($testFile, 0, -3);
+				$className = 'SkemaTest\\' . $testNamespaceFolder . '\\' . substr($testFile, 0, -4);
 				$className::run($tf);
 			}
 
